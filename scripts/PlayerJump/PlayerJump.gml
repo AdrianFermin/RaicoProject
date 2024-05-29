@@ -3,6 +3,10 @@ function PlayerJump(){
 	//Evitar saltar mientras atacas
 	if attacking { exit; }
 	
+	if place_meeting(x, y - abs(xspd*2)-1, oWall) {
+		exit;
+	}
+	
 	if onGround && (myFloorPlat.object_index == oSemiSolidWall
 	|| object_is_ancestor(myFloorPlat.object_index, oSemiSolidWall)) {
 		

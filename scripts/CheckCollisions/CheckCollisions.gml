@@ -29,7 +29,6 @@ function CheckCollisions(){
 				
 				xspd = 0; //Frena al jugador si colisiona con una pared
 			}
-		
 			
 		}	
 		

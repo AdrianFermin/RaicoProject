@@ -85,12 +85,30 @@ function PlayerHanging(){
 		
 		if input_check("right") {
 			
-			xspd = climbSpd * 1.25;
-			image_speed = 1;
+			if bbox_left < inst.bbox_right - 8 {
+				xspd = climbSpd * 1.25;
+				image_speed = 1;
+			} else {
+				xspd = 0;
+				hanging = false;
+				image_speed = 1;
+				grav = .275;
+			}
+			
 			
 		} else if input_check("left") {
-			xspd = -climbSpd * 1.25;
-			image_speed = 1;
+			
+			if bbox_right > inst.bbox_left + 8 {
+				xspd = -climbSpd * 1.25;
+				image_speed = 1;
+			} else {
+				xspd = 0;
+				hanging = false;
+				image_speed = 1;
+				grav = .275;
+			}
+			
+			
 		} else {
 			xspd = 0;
 		}
