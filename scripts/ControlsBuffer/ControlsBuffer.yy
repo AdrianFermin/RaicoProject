@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"ControlsBuffer",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ControlsBuffer",
+  "parent":{
+    "name":"Player",
+    "path":"folders/Scripts/Player.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

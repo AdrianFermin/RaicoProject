@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"PlayerUseBow",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"PlayerUseBow",
+  "parent":{
+    "name":"Items",
+    "path":"folders/Scripts/Player/Items.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

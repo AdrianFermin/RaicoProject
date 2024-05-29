@@ -1,0 +1,2 @@
+instance_activate_object(input_controller_object)
+__input_system_tick();

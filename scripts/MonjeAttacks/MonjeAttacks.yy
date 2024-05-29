@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"MonjeAttacks",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"MonjeAttacks",
+  "parent":{
+    "name":"Monje",
+    "path":"folders/Scripts/Enemies/Monje.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

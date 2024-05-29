@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"WallBoots",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"WallBoots",
+  "parent":{
+    "name":"Items",
+    "path":"folders/Scripts/Player/Items.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

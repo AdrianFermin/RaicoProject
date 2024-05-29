@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"Ambient_Music",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":36.0,
+  "name":"Ambient_Music",
+  "parent":{
+    "name":"Test",
+    "path":"folders/Sounds/Test.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"Ambient_Music.wav",
+  "type":0,
+  "volume":0.5,
+}
