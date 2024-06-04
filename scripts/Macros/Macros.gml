@@ -1,5 +1,9 @@
 function Macros(){
 	
+	//Interactuables
+	#macro INTERACTABLE_PRESSED 0
+	#macro INTERACTABLE_HOVER 1
+	
 	//Estados
 	#macro BASE_STATE 0
 	#macro RUNNING_STATE 1

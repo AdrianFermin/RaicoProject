@@ -31,6 +31,8 @@ mando = noone;
 
 interactBtn = noone;
 acceptBtn = noone;
+moveRightBtn = noone;
+moveLefttBtn = noone;
 
 
 ControlControllerButtons()

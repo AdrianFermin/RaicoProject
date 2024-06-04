@@ -7,12 +7,16 @@ function ControlControllerButtons(){
 		if string_pos("xbox", gp){
 			interactBtn = sXboxY;
 			acceptBtn = sXboxA;
+			moveRightBtn = noone;
+			moveLefttBtn = noone;
 			mando = "xbox";
 		}
 	
 	} else {
 		interactBtn = sKBEnter;
 		acceptBtn = sKBSpace;
+		moveRightBtn = noone;
+		moveLefttBtn = noone;
 		mando = "teclado";
 	}
 }
