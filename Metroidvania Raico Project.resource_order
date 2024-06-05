@@ -72,6 +72,7 @@
     {"name":"Scripts","order":5,"path":"folders/Scripts.yy",},
     {"name":"Elemental System","order":3,"path":"folders/Scripts/Elemental System.yy",},
     {"name":"Enemies","order":4,"path":"folders/Scripts/Enemies.yy",},
+    {"name":"Cinematics System","order":5,"path":"folders/Scripts/Cinematics System.yy",},
     {"name":"Inventory","order":1,"path":"folders/Scripts/Inventory.yy",},
     {"name":"Attacks","order":6,"path":"folders/Scripts/Player/Attacks.yy",},
     {"name":"Items","order":11,"path":"folders/Scripts/Player/Items.yy",},

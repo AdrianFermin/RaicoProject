@@ -83,6 +83,7 @@
     {"$GMFolder":"","%Name":"Elemental System","folderPath":"folders/Scripts/Elemental System.yy","name":"Elemental System","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Enemies","folderPath":"folders/Scripts/Enemies.yy","name":"Enemies","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Monje","folderPath":"folders/Scripts/Enemies/Monje.yy","name":"Monje","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Cinematics System","folderPath":"folders/Scripts/Cinematics System.yy","name":"Cinematics System","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Inventory","folderPath":"folders/Scripts/Inventory.yy","name":"Inventory","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Player","folderPath":"folders/Scripts/Player.yy","name":"Player","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Attacks","folderPath":"folders/Scripts/Player/Attacks.yy","name":"Attacks","resourceType":"GMFolder","resourceVersion":"2.0",},
