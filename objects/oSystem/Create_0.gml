@@ -5,6 +5,8 @@ inventory = ds_list_create();
 
 InitialItems()
 
+onCinematic = false;
+
 playerStartPosition = noone;
 
 bgAmbientMusic = []

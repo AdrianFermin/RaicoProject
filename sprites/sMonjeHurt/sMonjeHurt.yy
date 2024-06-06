@@ -31,7 +31,7 @@
   "origin":7,
   "parent":{
     "name":"MonjeTierra",
-    "path":"folders/Sprites/Enemies/MonjeTierra.yy",
+    "path":"folders/Sprites/Entities/Enemies/MonjeTierra.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -29,7 +29,7 @@
   "origin":7,
   "parent":{
     "name":"Attack1",
-    "path":"folders/Sprites/Enemies/MonjeTierra/Attack1.yy",
+    "path":"folders/Sprites/Entities/Enemies/MonjeTierra/Attack1.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -1,6 +1,5 @@
 function PlayerSpriteControl(){
 	
-	
 	if salud > 0 {
 		
 		//Running
