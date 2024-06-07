@@ -1,0 +1,5 @@
+function CutsceneMusicResume(){
+	
+	bgMusic()
+	CutsceneEndAction()
+}

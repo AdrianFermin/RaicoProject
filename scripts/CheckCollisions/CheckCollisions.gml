@@ -38,7 +38,7 @@ function CheckCollisions(){
 	downSlopeSemisolid = noone;
 	if yspd >= 0 && !place_meeting(x + xspd, y + 1, oWall) && place_meeting(x + xspd, y + abs(xspd)+1, oWall) {
 		 
-		 downSlopeSemisolid = checkForSemisolidPlatform(x + xspd, y + abs(xspd) + 1);
+		 downSlopeSemisolid = oPlayer.checkForSemisolidPlatform(x + xspd, y + abs(xspd) + 1);
 		 
 		 if !instance_exists(downSlopeSemisolid) {
 			 while !place_meeting(x + xspd, y + _subPixel, oWall) { y += _subPixel }

@@ -1,10 +1,21 @@
-function CutsceneChangeXscale(inst, xScale = 0){
+function CutsceneChangeXscale(ref, xScale = 0){
 	
-	if xScale != 0 {
-		inst.image_xscale = xScale;
+	var inst = ref;
+	if ref != oPlayer { inst = sceneInstances[ref]; }
+	
+	if ref == oPlayer {
+		if xScale != 0 {
+			inst.face = xScale;
+		} else {
+			inst.face = -inst.face;
+		}
 	} else {
-		inst.image_xscale = -inst.image_xscale;
+		if xScale != 0 {
+			inst.image_xscale = xScale;
+		} else {
+			inst.image_xscale = -inst.image_xscale;
+		}
 	}
-	
+
 	CutsceneEndAction();
 }

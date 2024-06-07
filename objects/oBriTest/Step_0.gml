@@ -1,0 +1,6 @@
+Gravity()
+CheckCollisions()
+
+
+
+BriTestSpriteControl()

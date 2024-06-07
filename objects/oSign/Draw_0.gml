@@ -1,6 +1,8 @@
 // Inherit the parent event
 event_inherited();
 
+if oSystem.onCinematic { exit; }
+
 var i = 0;
 
 if active {

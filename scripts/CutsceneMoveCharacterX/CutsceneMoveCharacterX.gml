@@ -1,4 +1,9 @@
-function CutsceneMoveCharacterX(inst, xTo, relative, loops, spd){
+function CutsceneMoveCharacterX(ref, xTo, relative, loops, spd){
+	
+	var inst = ref;
+	if ref != oPlayer { inst = sceneInstances[ref]; }
+	
+	instance_activate_object(inst)
 	
 	if x_dest == -1 {
 		
@@ -21,8 +26,6 @@ function CutsceneMoveCharacterX(inst, xTo, relative, loops, spd){
 			
 			xspd = lDirX;
 			CheckCollisions()
-			
-			if lDirX != 0 { image_xscale = sign(lDirX) }
 			
 		} else {
 			
