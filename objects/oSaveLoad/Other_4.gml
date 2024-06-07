@@ -1,0 +1,2 @@
+LoadRoom();
+SetActualStruct();

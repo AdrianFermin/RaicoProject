@@ -34,4 +34,33 @@ for (var i = 0; i < tilesX; i++) {
 		}
     }
 }
-show_debug_message(instance_number(oNavigation))
+
+#region Instances to Destroy
+	
+	if array_length(instancesToDestroy) != 0 {
+		
+		for (var i = 0; i < array_length(instancesToDestroy); i++) {
+			
+			var struct = instancesToDestroy[i];
+			
+			if room == struct.roomFrom {
+				
+				var data = struct_get(oSaveLoad.actualStruct, struct.structName)
+				
+				for (var j = 0; j < array_length(data); j++) {
+					
+					var current = data[j];
+					
+					if current.refInst == struct.inst {
+						
+						var a = instance_place(current.x, current.y, struct.obj);
+						instance_destroy(a);
+						array_delete(instancesToDestroy, i, 1);
+					}
+				}
+			}
+			
+		}
+	}
+
+#endregion

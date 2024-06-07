@@ -9,8 +9,8 @@
   "name":"oCutsceneTriggerPerm",
   "overriddenProperties":[],
   "parent":{
-    "name":"Utils",
-    "path":"folders/Objects/Utils.yy",
+    "name":"Collisions",
+    "path":"folders/Objects/Collisions.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -28,6 +28,7 @@
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"","%Name":"trigger_obj","filters":[],"listItems":[],"multiselect":false,"name":"trigger_obj","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"oPlayer","varType":0,},
+    {"$GMObjectProperty":"","%Name":"t_scene_info","filters":[],"listItems":[],"multiselect":false,"name":"t_scene_info","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"-1","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

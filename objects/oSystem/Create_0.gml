@@ -36,6 +36,7 @@ acceptBtn = noone;
 moveRightBtn = noone;
 moveLefttBtn = noone;
 
+instancesToDestroy = [];
 
 ControlControllerButtons()
 
