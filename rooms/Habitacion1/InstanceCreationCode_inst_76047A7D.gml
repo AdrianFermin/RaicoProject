@@ -1,0 +1,1 @@
+if instance_number(oPlayer) > 1 { instance_destroy() }

@@ -1,1 +1,3 @@
-SaveRoom();
+if !skipRoomSave { SaveRoom(); }
+
+skipRoomSave = false;

@@ -14,7 +14,7 @@ function AddItem(itemId, quantity=1){
 		item[INVENTORY_QUANTITY] = clamp(quantity, 1, itemDef[ITEM_DEF_MAX]); //Agrega la cantidad
 		item[INVENTORY_STATE] = true; //Activa el item
 	
-		ds_list_add(inventory, item); //Guarda la lista del inventario
+		ds_list_add(oSystem.inventory, item); //Guarda la lista del inventario
 	}
 	
 	

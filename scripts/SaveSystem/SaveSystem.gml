@@ -141,3 +141,58 @@ function LoadRoom() {
 	#endregion
 	
 }
+	
+
+function SaveGame(fileNum = 0) {
+	
+	var _saveArray = array_create(0);
+	
+	SaveRoom();
+	
+	global.statData.save_x = oPlayer.x;
+	global.statData.save_y = oPlayer.y;
+	global.statData.save_rm = room_get_name(room);
+	global.statData.save_inv = ds_list_write(oSystem.inventory);
+	
+	array_push(_saveArray, global.statData);
+	
+	array_push(_saveArray, global.levelData);
+	
+	var fileName = "savedata" + string(fileNum) + ".sav";
+	var json = json_stringify(_saveArray);
+	var bufferVar = buffer_create(string_byte_length(json) + 1, buffer_fixed, 1);
+	
+	buffer_write(bufferVar, buffer_string, json);
+	buffer_save(bufferVar, fileName);
+	buffer_delete(bufferVar);
+	
+	show_message("GUARDANDO: " + fileName)
+	
+}
+
+function LoadGame(fileNum = 0) {
+	
+	var fileName = "savedata" + string(fileNum) + ".sav";
+	if !file_exists(fileName) exit;
+	
+	var bufferVar = buffer_load(fileName);
+	var json = buffer_read(bufferVar, buffer_string);
+	buffer_delete(bufferVar);
+	
+	var _loadArray = json_parse(json);
+	
+	global.statData = array_get(_loadArray, 0);
+	global.levelData = array_get(_loadArray, 1);
+	
+	var _loadRoom = asset_get_index(global.statData.save_rm);
+	room_goto(_loadRoom);
+	oSaveLoad.skipRoomSave = true;
+	
+	if instance_exists(oPlayer) { instance_destroy(oPlayer) }
+	instance_create_layer(global.statData.save_x, global.statData.save_y, "Player", oPlayer);
+	ds_list_read(oSystem.inventory, global.statData.save_inv);
+	
+	LoadRoom()
+	
+	show_message("CARGANDO: " + fileName)
+}
