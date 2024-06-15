@@ -35,7 +35,7 @@ for (var i = 0; i < array_length(sprites); i++) {
 	text = string_delete(text, pos, 1)
 	textENG = string_delete(textENG, posENG, 1)
 	
-	var join = "[scale, 2][" + sprite_get_name(variable_instance_get(sys, sprites[i])) + "][/s]";
+	var join = "[" + sprite_get_name(variable_instance_get(sys, sprites[i])) + "]";
 	
 	text = string_insert(join, text, pos)
 	textENG = string_insert(join, textENG, posENG)
