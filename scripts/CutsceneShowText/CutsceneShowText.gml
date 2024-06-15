@@ -1,8 +1,8 @@
-function CutsceneShowText(text) {
+function CutsceneShowText(text, textENG) {
 	
 	if instance_number(oCutsceneTextBox) > 0 {
 		exit;
 	}
 	
-	TextToView(text)
+	TextToView(text, textENG);
 }

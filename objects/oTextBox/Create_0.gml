@@ -17,7 +17,7 @@ if player == noone {
 	finalY = oCamera.y + 200;
 }
 
-scb = scribble(text);
+scb = oSystem.idioma == IDIOMA_ESP ? scribble(text) : scribble(textENG);
 scb.starting_format("fnRetro", c_white)
 scb.wrap(470 * 2, 60 * 2)
 	

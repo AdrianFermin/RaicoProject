@@ -28,13 +28,20 @@ strongToNormal = [ELEMENT_EARTH];
 strongToEarth = [ELEMENT_WATER];
 strongToThunder = [ELEMENT_EARTH];
 
+//Lenguaje
+idioma = IDIOMA_ENG;
+
 //Listado de acciones y botones
 mando = noone;
 
 interactBtn = noone;
 acceptBtn = noone;
+cancelBtn = noone;
+
 moveRightBtn = noone;
-moveLefttBtn = noone;
+moveLeftBtn = noone;
+moveUpBtn = noone;
+moveDownBtn = noone;
 
 ControlControllerButtons()
 

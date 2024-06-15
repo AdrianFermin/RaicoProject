@@ -142,7 +142,6 @@ function LoadRoom() {
 	
 }
 	
-
 function SaveGame(fileNum = 0) {
 	
 	var _saveArray = array_create(0);

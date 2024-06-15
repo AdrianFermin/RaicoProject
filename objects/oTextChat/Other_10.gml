@@ -1,1 +1,1 @@
-TextToView(text, id)
+TextToView(text, textENG)

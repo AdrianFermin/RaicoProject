@@ -19,11 +19,13 @@ function __input_config_verbs()
 			left:	input_binding_key(vk_left),
 			up:		input_binding_key(vk_up),
 			down:	input_binding_key(vk_down),
+			
 			jump:	input_binding_key(vk_space),
 			dash:	input_binding_key(vk_shift),
 			attack:	input_binding_key(ord("X")),
 			bow:	input_binding_key(ord("S")),
 			bomb:	input_binding_key(ord("A")),
+			
 			interact: input_binding_key(vk_enter),
 			accept:	input_binding_key(vk_space),
 			cancel:	input_binding_key(vk_shift),
@@ -35,14 +37,18 @@ function __input_config_verbs()
 			left:	input_binding_gamepad_axis(gp_axislh, true),
 			up:		input_binding_gamepad_axis(gp_axislv, true),
 			down:	input_binding_gamepad_axis(gp_axislv, false),
+			
 			jump:	input_binding_gamepad_button(gp_face1),
 			dash:	input_binding_gamepad_button(gp_face2),
 			attack:	input_binding_gamepad_button(gp_face3),
 			bow:	input_binding_gamepad_button(gp_shoulderrb),
 			bomb:	input_binding_gamepad_button(gp_shoulderlb),
+			
 			interact: input_binding_gamepad_button(gp_face4),
 			accept:	input_binding_gamepad_button(gp_face1),
 			cancel:	input_binding_gamepad_button(gp_face2),
+			acceptSwitch:	input_binding_gamepad_button(gp_face2),
+			cancelSwitch:	input_binding_gamepad_button(gp_face1),
         },
         
         touch:
