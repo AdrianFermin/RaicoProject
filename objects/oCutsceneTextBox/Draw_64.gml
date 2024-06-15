@@ -31,9 +31,11 @@ if active && image_xscale == 2 {
 		counter += .75;
 	}
 	
+	var spr = "[" + sprite_get_name(oSystem.acceptBtn) + "]";
+
 	if oSystem.mando == "teclado" {
-		draw_sprite_ext(oSystem.acceptBtn, sub, finalX + 360, finalY + 40, 2.5, 2.5, 0, c_white, 1)
+		draw_text_scribble(finalX + 340, finalY + 35, "[scale, 3]" + spr)
 	} else {
-		draw_sprite_ext(oSystem.acceptBtn, sub, finalX + 440, finalY + 50, 2.25, 2.25, 0, c_white, 1)
+		draw_text_scribble(finalX + 420, finalY + 20, "[scale, 2.25]" + spr)
 	}
 }
