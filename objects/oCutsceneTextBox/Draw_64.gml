@@ -34,7 +34,7 @@ if active && image_xscale == 2 {
 	var spr = "[" + sprite_get_name(oSystem.acceptBtn) + "]";
 
 	if oSystem.mando == "teclado" {
-		draw_text_scribble(finalX + 340, finalY + 35, "[scale, 3]" + spr)
+		draw_text_scribble(finalX + 340, finalY + 35, "[scale, 1.50]" + spr)
 	} else {
 		draw_text_scribble(finalX + 420, finalY + 20, "[scale, 2.25]" + spr)
 	}

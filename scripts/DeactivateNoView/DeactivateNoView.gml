@@ -9,6 +9,8 @@ function DeactivateNoView(){
 	instance_activate_object(input_controller_object)
 	instance_activate_object(oCamera)
 	instance_activate_object(oTextBox)
+	instance_activate_object(oCutsceneTextBox)
 	instance_activate_object(oPlayer)
 	instance_activate_object(oTransition)
+	instance_activate_object(oCutscene)
 }

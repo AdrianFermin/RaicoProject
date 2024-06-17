@@ -14,6 +14,9 @@ function ControlControllerButtons(){
 			moveLeftBtn = sXboxStickLeft;
 			moveUpBtn = sXboxStickUp;
 			moveDownBtn = sXboxStickDown;
+			
+			jumpBtn = sXboxA;
+			
 			mando = "xbox";
 			
 			
@@ -27,6 +30,9 @@ function ControlControllerButtons(){
 			moveLeftBtn = sSwitchStickLeft;
 			moveUpBtn = sSwitchStickUp;
 			moveDownBtn = sSwitchStickDown;
+			
+			jumpBtn = sSwitchB;
+			
 			mando = "switch";
 			
 		}
@@ -40,6 +46,9 @@ function ControlControllerButtons(){
 		moveLeftBtn = sKBArrowLeft;
 		moveUpBtn = sKBArrowUp;
 		moveDownBtn = sKBArrowDown;
+		
+		jumpBtn = sKBSpace;
+		
 		mando = "teclado";
 		
 	}

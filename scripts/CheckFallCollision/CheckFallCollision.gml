@@ -52,23 +52,26 @@ function CheckFallCollision(){
 	}
 	
 	//Caer de la plataforma
-	if input_check("down") && input_check_pressed("jump") {
+	with oPlayer {
 		
-		if instance_exists(myFloorPlat)
-		&& (myFloorPlat.object_index == oSemiSolidWall || object_is_ancestor(myFloorPlat.object_index, oSemiSolidWall)) {
+		if input_check("down") && input_check_pressed("jump") {
+		
+			if instance_exists(myFloorPlat)
+			&& (myFloorPlat.object_index == oSemiSolidWall || object_is_ancestor(myFloorPlat.object_index, oSemiSolidWall)) {
 			
-			//Verificar si puedo bajar
-			var _yCheck = y + max( 1, myFloorPlat.yspd + 1);
-			if !place_meeting(x, _yCheck, oWall) {
+				//Verificar si puedo bajar
+				var _yCheck = y + max( 1, myFloorPlat.yspd + 1);
+				if !place_meeting(x, _yCheck, oWall) {
 				
-				y += 1;
+					y += 1;
 				
-				if myFloorPlat.yspd > 0 { yspd = myFloorPlat.yspd; }
+					if myFloorPlat.yspd > 0 { yspd = myFloorPlat.yspd; }
 				
-				//Olvidar la plataforma
-				forgetSemiSolid = myFloorPlat;
+					//Olvidar la plataforma
+					forgetSemiSolid = myFloorPlat;
 				
-				myFloorPlat = noone;
+					myFloorPlat = noone;
+				}
 			}
 		}
 	}

@@ -9,7 +9,7 @@ if onArea {
 			event_user(0)
 		}
 	
-	} else if tipo == INTERACTABLE_HOVER {
+	} else if tipo == INTERACTABLE_HOVER && oPlayer.onGround {
 		
 		active = true;
 	}

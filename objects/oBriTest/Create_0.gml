@@ -10,6 +10,18 @@ function BriTestSpriteControl() {
 		sprite_index = idleSpr;
 		maskSpr = idleSpr;
 	}
+	
+	//Falling
+	if yspd < 0 {
+		sprite_index = jumpSpr;
+		maskSpr = idleSpr;
+	}
+	
+	//Jumping
+	if yspd > 0 {
+		sprite_index = fallSpr;
+		maskSpr = idleSpr;
+	}
 }
 
 moveSpd = 3; // Velocidad de movimiento
@@ -26,4 +38,6 @@ movePlatMaxYspd = termVel;
 
 runSpr = sBriTestRun;
 idleSpr = sBriTestIdle;
+jumpSpr = noone;
+fallSpr = sBriTestFall;
 maskSpr = idleSpr;

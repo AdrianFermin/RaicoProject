@@ -9,7 +9,7 @@ onCinematic = false;
 
 playerStartPosition = noone;
 
-bgAmbientMusic = []
+bgAmbientMusic = [Habitacion2]
 bgForestMusic = [Test_Room2, Habitacion1]
 
 //Elements
@@ -42,6 +42,8 @@ moveRightBtn = noone;
 moveLeftBtn = noone;
 moveUpBtn = noone;
 moveDownBtn = noone;
+
+jumpBtn = noone;
 
 ControlControllerButtons()
 

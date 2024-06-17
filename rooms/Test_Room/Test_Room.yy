@@ -14,6 +14,7 @@
     {"name":"inst_5311E4C0","path":"rooms/Test_Room/Test_Room.yy",},
     {"name":"inst_5AC13C9E","path":"rooms/Test_Room/Test_Room.yy",},
     {"name":"inst_4F7FA37B","path":"rooms/Test_Room/Test_Room.yy",},
+    {"name":"inst_2F7B9A84","path":"rooms/Test_Room/Test_Room.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -37,8 +38,9 @@
         {"$GMRInstance":"","%Name":"inst_4F7FA37B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4F7FA37B","objectId":{"name":"oRoomChange","path":"objects/oRoomChange/oRoomChange.yy",},"properties":[
             {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"oRoomChange","path":"objects/oRoomChange/oRoomChange.yy",},"propertyId":{"name":"roomTo","path":"objects/oRoomChange/oRoomChange.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Habitacion1",},
             {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"oRoomChange","path":"objects/oRoomChange/oRoomChange.yy",},"propertyId":{"name":"xTo","path":"objects/oRoomChange/oRoomChange.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"896",},
-            {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"oRoomChange","path":"objects/oRoomChange/oRoomChange.yy",},"propertyId":{"name":"yTo","path":"objects/oRoomChange/oRoomChange.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"448",},
+            {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"oRoomChange","path":"objects/oRoomChange/oRoomChange.yy",},"propertyId":{"name":"yTo","path":"objects/oRoomChange/oRoomChange.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"416",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":12.0,"x":-32.0,"y":128.0,},
+        {"$GMRInstance":"","%Name":"inst_2F7B9A84","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2F7B9A84","objectId":{"name":"oSign","path":"objects/oSign/oSign.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":256.0,"y":480.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4279129184,"depth":600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],

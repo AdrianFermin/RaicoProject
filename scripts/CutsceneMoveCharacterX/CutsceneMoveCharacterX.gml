@@ -1,4 +1,4 @@
-function CutsceneMoveCharacterX(ref, xTo, relative, loops, spd){
+function CutsceneMoveCharacterX(ref, xTo, relative, spd) {
 	
 	var inst = ref;
 	if ref != oPlayer { inst = sceneInstances[ref]; }
