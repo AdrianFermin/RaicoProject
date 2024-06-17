@@ -13,4 +13,5 @@ function DeactivateNoView(){
 	instance_activate_object(oPlayer)
 	instance_activate_object(oTransition)
 	instance_activate_object(oCutscene)
+	instance_activate_object(oSaveLoad)
 }

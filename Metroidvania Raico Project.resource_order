@@ -129,7 +129,7 @@
     {"name":"oSlope1","order":2,"path":"objects/oSlope1/oSlope1.yy",},
     {"name":"oSlope2","order":3,"path":"objects/oSlope2/oSlope2.yy",},
     {"name":"oSlope3","order":4,"path":"objects/oSlope3/oSlope3.yy",},
-    {"name":"oSystem","order":1,"path":"objects/oSystem/oSystem.yy",},
+    {"name":"oSystem","order":7,"path":"objects/oSystem/oSystem.yy",},
     {"name":"oTest","order":4,"path":"objects/oTest/oTest.yy",},
     {"name":"oTextBox","order":5,"path":"objects/oTextBox/oTextBox.yy",},
     {"name":"oTextChat","order":1,"path":"objects/oTextChat/oTextChat.yy",},

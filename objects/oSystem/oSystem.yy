@@ -11,8 +11,8 @@
   "name":"oSystem",
   "overriddenProperties":[],
   "parent":{
-    "name":"Utils",
-    "path":"folders/Objects/Utils.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":true,
