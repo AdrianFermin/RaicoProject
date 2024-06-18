@@ -12,9 +12,20 @@ function CutsceneInstanceDestroy(ref, _instancia = 0) {
 	CutsceneEndAction()
 }
 
-function CutsceneInstanceDestroyOther(ref, _obj, habitacion, _structName, levelName, counterName) {
+function CutsceneInstanceDestroyOther(levelName, _structName, counterName, ref) {
 	
 	RemoveSavedInstance(levelName, _structName, counterName, ref)
 	CutsceneEndAction()
 	
+}
+
+function CutsceneInstanceDestroyAll() {
+	
+	var size = array_length(sceneInstances);
+	
+	for(var i = 0; i < size; i++) {
+		instance_destroy(sceneInstances[i]);
+	}
+	
+	CutsceneEndAction()
 }

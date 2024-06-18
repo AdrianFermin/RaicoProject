@@ -1,8 +1,8 @@
 function SetActualStruct() {
 	
 	if room == Habitacion1 { actualStruct = global.levelData.level_1 }
-	if room == Test_Room { actualStruct = global.levelData.level_2 }
-	if room == Test_Room2 { actualStruct = global.levelData.level_3 }
+	if room == Habitacion2 { actualStruct = global.levelData.level_2 }
+	if room == Habitacion3 { actualStruct = global.levelData.level_3 }
 	
 }
 
@@ -91,7 +91,7 @@ function SaveRoom(roomFrom = noone) {
 	
 	if roomFrom == Habitacion1 { global.levelData.level_1 = _roomStruct }
 	if roomFrom == Habitacion2 { global.levelData.level_2 = _roomStruct }
-	if roomFrom == Test_Room2 { global.levelData.level_3 = _roomStruct }
+	if roomFrom == Habitacion3 { global.levelData.level_3 = _roomStruct }
 	
 	#endregion
 }
@@ -104,7 +104,7 @@ function LoadRoom() {
 	
 	if room == Habitacion1 { _roomStruct = global.levelData.level_1 }
 	if room == Habitacion2 { _roomStruct = global.levelData.level_2 }
-	if room == Test_Room2 { _roomStruct = global.levelData.level_3 }
+	if room == Habitacion3 { _roomStruct = global.levelData.level_3 }
 	
 	#endregion
 	

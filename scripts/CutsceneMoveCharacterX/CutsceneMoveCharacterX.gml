@@ -1,4 +1,4 @@
-function CutsceneMoveCharacterX(ref, xTo, relative, spd) {
+function CutsceneMoveCharacterX(ref, xTo, relative, spd, camera) {
 	
 	var inst = ref;
 	if ref != oPlayer { inst = sceneInstances[ref]; }
@@ -40,4 +40,7 @@ function CutsceneMoveCharacterX(ref, xTo, relative, spd) {
 		}
 		
 	}
+	
+	if camera { CutsceneSetCamera(ref) }
+	
 }

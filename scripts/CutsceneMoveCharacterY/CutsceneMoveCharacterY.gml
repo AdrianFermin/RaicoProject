@@ -1,4 +1,4 @@
-function CutsceneMoveCharacterY(ref, yTo, relative, up, spd) {
+function CutsceneMoveCharacterY(ref, yTo, relative, up, spd, camera) {
 	
 	var inst = ref;
 	if ref != oPlayer { inst = sceneInstances[ref]; }
@@ -41,8 +41,8 @@ function CutsceneMoveCharacterY(ref, yTo, relative, up, spd) {
 				}
 			
 			}
-		}
-			
-		
+		}	
 	}
+	
+	if camera { CutsceneSetCamera(ref) }
 }
