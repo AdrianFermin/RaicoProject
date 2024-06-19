@@ -1,5 +1,7 @@
 function CutsceneSetCameraFocus(ref, spd) {
 	
+	sceneCameraFocus = ref;
+	
 	var inst;
 	var Ydir;
 	var Xdir;

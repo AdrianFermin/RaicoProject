@@ -28,15 +28,17 @@ function CutsceneCameraZoom(number, dir, spd = 1) {
 			actualW += spd * operator;
 		}
 		
-		spd = abs((spd/16) * 9);
+		var spdH = abs((spd/16) * 9);
 		
 		if actualH >= alto - spd && actualH <= alto + spd {
 			actualH = alto;
 		} else {
-			actualH += spd * operator;
+			actualH += spdH * operator;
 		}
 		
 		camera_set_view_size(view_camera[0], actualW, actualH);
+		
+		CutsceneSetCamera(sceneCameraFocus)
 		
 	} else {
 		
