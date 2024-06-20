@@ -9,8 +9,8 @@
   "name":"oCutsceneTriggerPerm",
   "overriddenProperties":[],
   "parent":{
-    "name":"Collisions",
-    "path":"folders/Objects/Collisions.yy",
+    "name":"Triggers",
+    "path":"folders/Objects/Collisions/Triggers.yy",
   },
   "parentObjectId":null,
   "persistent":false,

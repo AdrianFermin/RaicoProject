@@ -1,5 +1,7 @@
 InitItems();
 
+global.coins = 0;
+
 //Crear lista de inventario
 inventory = ds_list_create();
 
@@ -10,7 +12,7 @@ onCinematic = false;
 playerStartPosition = noone;
 
 bgAmbientMusic = [Habitacion2]
-bgForestMusic = [Test_Room2, Habitacion1]
+bgForestMusic = [Test_Room2, Habitacion1, Habitacion3]
 
 //Elements
 
@@ -44,6 +46,7 @@ moveUpBtn = noone;
 moveDownBtn = noone;
 
 jumpBtn = noone;
+dashBtn = noone;
 
 ControlControllerButtons()
 

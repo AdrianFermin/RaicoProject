@@ -33,6 +33,7 @@ function PlayerJump(){
 	}
 	
 	if hanging {
+		
 		if input_check("up") || input_check("down") { exit; }
 		
 		grav = .275;

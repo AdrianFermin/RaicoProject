@@ -18,21 +18,12 @@ if active {
 
 if active && image_xscale == 2 {
 	
-	if counter > 7.5 {
-		
-		if sub != 3 {
-			sub++;
-			counter = 0;
-		} else {
-			sub = 0;
-			counter = 0;
-		}
+	var spr = "[" + sprite_get_name(oSystem.acceptBtn) + "]";
+
+	if oSystem.mando == "teclado" {
+		draw_text_scribble(finalX + 340, finalY + 35, "[scale, 1.50]" + spr)
 	} else {
-		counter += .75;
+		draw_text_scribble(finalX + 420, finalY + 20, "[scale, 2.25]" + spr)
 	}
-	
-	var spr = "[scale, 0.5][" + sprite_get_name(oSystem.acceptBtn) + "]";
-	
-	draw_text_scribble(finalX + 300, finalY + 40, spr)
 
 }

@@ -18,19 +18,6 @@ if active {
 
 if active && image_xscale == 2 {
 	
-	if counter > 7.5 {
-		
-		if sub != 3 {
-			sub++;
-			counter = 0;
-		} else {
-			sub = 0;
-			counter = 0;
-		}
-	} else {
-		counter += .75;
-	}
-	
 	var spr = "[" + sprite_get_name(oSystem.acceptBtn) + "]";
 
 	if oSystem.mando == "teclado" {

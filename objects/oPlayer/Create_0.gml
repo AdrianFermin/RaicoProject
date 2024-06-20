@@ -14,6 +14,14 @@ function setOnground() {
 		airDashCount = 0; //Reinicia el contador de dashes en el aire
 		coyoteJumpTimer = 0; //Reinicia el coyote  time
 		
+		if face == 1 {
+			lastX = oPlayer.x - 64;
+		} else if face == -1 {
+			lastX = oPlayer.x + 64;
+		}
+		
+		lastY = oPlayer.y - 32;
+		
 	} else {
 		//Verifica si esta en el suelo y aplica el timer del coyote time
 		if onGround { coyoteJumpTimer = coyoteJumpFrames; }
@@ -112,6 +120,8 @@ wallJumped = 0; //Instancia de la pared anteriormente saltada
 wallJumpCount = 0; //Conteo de saltos en la misma pared
 onGround = true; //Esta en el suelo?
 jumpLock = 0;
+lastX = 0;
+lastY = 0;
 //Coyote Time
 coyoteJumpFrames = 5; //Frames para el coyote time
 coyoteJumpTimer = 0; //Timer para el coyote time

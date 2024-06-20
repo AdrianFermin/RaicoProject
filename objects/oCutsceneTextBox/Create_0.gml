@@ -25,6 +25,3 @@ typ = scribble_typist()
 typ.in(1, 0)
 oPlayer.state = READING_STATE;
 
-sub = 0;
-counter = 0;
-

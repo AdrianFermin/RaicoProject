@@ -32,6 +32,17 @@ function CutsceneSetCameraFocus(ref, spd) {
 	_camX = clamp(_camX, 0, room_width - _camWidth);
 	_camY = clamp(_camY, 0, room_height - _camHeight);
 	
+	//Distancias a recorrer en X e Y
+	var distanceX = _camX - actualX;
+	var distanceY = _camY - actualY;
+	
+	// Distancia total
+	var totalDistance = point_distance(actualX, actualY, _camX, _camY);
+	
+	// Factores de movimiento en X e Y
+	var moveFactorX = abs(distanceX / totalDistance);
+	var moveFactorY = abs(distanceY / totalDistance);
+	
 	if actualX > _camX {
 		Xdir = -1;
 	} else if actualX == _camX {
@@ -53,13 +64,13 @@ function CutsceneSetCameraFocus(ref, spd) {
 		if actualX >= _camX - spd && actualX <= _camX + spd {
 			oCamera.finalCamX = _camX;
 		} else {
-			oCamera.finalCamX += spd * Xdir;
+			oCamera.finalCamX += (spd * moveFactorX) * Xdir;
 		}
 		
 		if actualY >= _camY - spd && actualY <= _camY + spd {
 			oCamera.finalCamY = _camY;
 		} else {
-			oCamera.finalCamY += spd * Ydir;
+			oCamera.finalCamY += (spd * moveFactorY) * Ydir;
 		}
 		
 		camera_set_view_pos(view_camera[0], oCamera.finalCamX, oCamera.finalCamY);

@@ -7,7 +7,10 @@ global.statData = {
 	save_x: 0,
 	save_y: 0,
 	save_rm: "Habitacion1",
-	save_inv: 0
+	
+	save_inv: 0,
+	save_coins: global.coins,
+	
 }
 
 global.levelData = {

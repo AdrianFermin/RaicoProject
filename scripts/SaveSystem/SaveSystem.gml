@@ -31,6 +31,7 @@ function SaveRoom(roomFrom = noone) {
 	
 	var _permCutsceneTriggerNum = instance_number(oCutsceneTriggerPerm);
 	var _CutsceneTriggerNum = instance_number(oCutsceneTrigger);
+	var _chestNum = instance_number(oChest);
 	
 	var _roomStruct = {
 		
@@ -38,6 +39,8 @@ function SaveRoom(roomFrom = noone) {
 		permCutsceneTriggerData: array_create(_permCutsceneTriggerNum),
 		CutsceneTriggerNum: _CutsceneTriggerNum,
 		CutsceneTriggerData: array_create(_CutsceneTriggerNum),
+		chestNum: _chestNum,
+		chestData: array_create(_chestNum),
 	}
 	
 	#region Get the Data
@@ -77,6 +80,26 @@ function SaveRoom(roomFrom = noone) {
 					t_scene_info: inst.t_scene_info,
 					image_xscale: inst.image_xscale,
 					image_yscale: inst.image_yscale,
+				}
+			}
+		}
+	
+	#endregion
+	
+	#region Chest
+	
+		for (var i = 0; i < _chestNum; i++) {
+			
+			var inst = instance_find(oChest, i);
+			
+			_roomStruct.chestData[i] = {
+				x: inst.x,
+				y: inst.y,
+				var_struct: {
+					opened: inst.opened,
+					content: inst.content,
+					quantity: inst.quantity,
+					area: inst.area
 				}
 			}
 		}
@@ -138,6 +161,20 @@ function LoadRoom() {
 	
 	#endregion
 	
+	#region Chest
+		
+		if instance_exists(oChest) { instance_destroy(oChest) }
+		
+		for (var i = 0; i < _roomStruct.chestNum; i++) {
+			
+			var inst = _roomStruct.chestData[i];
+			
+			instance_create_layer(inst.x, inst.y, "Instances", oChest, inst.var_struct)
+			
+		}
+	
+	#endregion
+	
 	#endregion
 	
 }
@@ -152,6 +189,7 @@ function SaveGame(fileNum = 0) {
 	global.statData.save_y = oPlayer.y;
 	global.statData.save_rm = room_get_name(room);
 	global.statData.save_inv = ds_list_write(oSystem.inventory);
+	global.statData.save_coins = global.coins;
 	
 	array_push(_saveArray, global.statData);
 	
@@ -182,6 +220,7 @@ function LoadGame(fileNum = 0) {
 	
 	global.statData = array_get(_loadArray, 0);
 	global.levelData = array_get(_loadArray, 1);
+	global.coins = global.statData.save_coins;
 	
 	var _loadRoom = asset_get_index(global.statData.save_rm);
 	room_goto(_loadRoom);
