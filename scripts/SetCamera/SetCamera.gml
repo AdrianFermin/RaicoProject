@@ -6,6 +6,9 @@ function SetCamera(){
 	var _camWidth = camera_get_view_width(view_camera[0]);
 	var _camHeight = camera_get_view_height(view_camera[0]);
 	
+	//show_message("Camara")
+	//show_message(_camWidth)
+	
 	originHeight = _camHeight;
 	originWidth = _camWidth;
 	

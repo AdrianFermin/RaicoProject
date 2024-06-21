@@ -41,9 +41,17 @@ function SaveRoom(roomFrom = noone) {
 		CutsceneTriggerData: array_create(_CutsceneTriggerNum),
 		chestNum: _chestNum,
 		chestData: array_create(_chestNum),
+		cameraSize: array_create(2),
 	}
 	
 	#region Get the Data
+	
+	#region Camera
+	
+		_roomStruct.cameraSize[0] = camera_get_view_width(view_camera[0])
+		_roomStruct.cameraSize[1] = camera_get_view_height(view_camera[0])
+		
+	#endregion
 	
 	#region Cutscene Permanent Trigger
 	
@@ -134,6 +142,12 @@ function LoadRoom() {
 	if !is_struct(_roomStruct) { exit; }
 	
 	#region Load the Data
+	
+	#region Camera
+	
+		camera_set_view_size(view_camera[0], _roomStruct.cameraSize[0], _roomStruct.cameraSize[1])
+		
+	#endregion
 	
 	#region Cutscene Permanent Trigger
 	
