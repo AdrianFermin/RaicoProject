@@ -1,12 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"oBriTest",
+  "%Name":"oViejoTest",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oBriTest",
+  "name":"oViejoTest",
   "overriddenProperties":[],
   "parent":{
     "name":"Entities",
@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sBriTestIdle",
-    "path":"sprites/sBriTestIdle/sBriTestIdle.yy",
+    "name":"sViejoTestIdle",
+    "path":"sprites/sViejoTestIdle/sViejoTestIdle.yy",
   },
   "spriteMaskId":null,
   "visible":true,

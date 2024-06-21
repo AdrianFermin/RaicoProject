@@ -4,8 +4,8 @@ t_scene_info = [
 	[CutsceneChangeXscale, 0],
 	[CutsceneSetCameraFocus, 0, 10],
 	[CutsceneShowText, "[scale, 1.25][c_blue]PETRONILA:[c_white] Que lento estas hoy, se te olvido"+
-	" como usar el [c_black]Dash[c_white] o que?", 
-	"[scale, 1.25][c_blue]PETRONILA:[c_white] You're too slow today, did you forget how to use the [c_black]Dash[c_white]?"],
+	" como usar el [c_gray]Dash[c_white] o que?", 
+	"[scale, 1.25][c_blue]PETRONILA:[c_white] You're too slow today, did you forget how to use the [c_gray]Dash[c_white]?"],
 	[CutsceneSetCameraFocus, oPlayer, 30],
 	[CutsceneWait, .2],
 	[CutsceneShowText, "[scale, 1.25][c_red]RAY:[c_white][shake]"+

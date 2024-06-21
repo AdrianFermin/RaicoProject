@@ -1,7 +1,7 @@
 // Inherit the parent event
 event_inherited();
 
-function BriTestSpriteControl() {
+function ViejoTestSpriteControl() {
 	
 	//Running
 	if abs(xspd) > 0 { 
@@ -28,8 +28,8 @@ function BriTestSpriteControl() {
 	}
 }
 
-runSpr = sBriTestRun;
-idleSpr = sBriTestIdle;
+runSpr = noone;
+idleSpr = sViejoTestIdle;
 jumpSpr = noone;
-fallSpr = sBriTestFall;
+fallSpr = noone;
 maskSpr = idleSpr;

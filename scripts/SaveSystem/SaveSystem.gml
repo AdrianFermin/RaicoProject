@@ -3,6 +3,7 @@ function SetActualStruct() {
 	if room == Habitacion1 { actualStruct = global.levelData.level_1 }
 	if room == Habitacion2 { actualStruct = global.levelData.level_2 }
 	if room == Habitacion3 { actualStruct = global.levelData.level_3 }
+	if room == Habitacion4 { actualStruct = global.levelData.level_4 }
 	
 }
 
@@ -29,6 +30,7 @@ function RemoveSavedInstance(levelName, arrayName, counterName, inst) {
 
 function SaveRoom(roomFrom = noone) {
 	
+	//Get instances numbers
 	instance_activate_object(oCutsceneTriggerPerm)
 	var _permCutsceneTriggerNum = instance_number(oCutsceneTriggerPerm);
 	
@@ -47,14 +49,15 @@ function SaveRoom(roomFrom = noone) {
 		chestNum: _chestNum,
 		chestData: array_create(_chestNum),
 		cameraSize: array_create(2),
+		
 	}
 	
 	#region Get the Data
 	
 	#region Camera
 	
-		_roomStruct.cameraSize[0] = camera_get_view_width(view_camera[0])
-		_roomStruct.cameraSize[1] = camera_get_view_height(view_camera[0])
+		_roomStruct.cameraSize[0] = rmW;
+		_roomStruct.cameraSize[1] = rmH;
 		
 	#endregion
 	
@@ -128,6 +131,7 @@ function SaveRoom(roomFrom = noone) {
 	if roomFrom == Habitacion1 { global.levelData.level_1 = _roomStruct }
 	if roomFrom == Habitacion2 { global.levelData.level_2 = _roomStruct }
 	if roomFrom == Habitacion3 { global.levelData.level_3 = _roomStruct }
+	if roomFrom == Habitacion4 { global.levelData.level_4 = _roomStruct }
 	
 	#endregion
 }
@@ -141,6 +145,7 @@ function LoadRoom() {
 	if room == Habitacion1 { _roomStruct = global.levelData.level_1 }
 	if room == Habitacion2 { _roomStruct = global.levelData.level_2 }
 	if room == Habitacion3 { _roomStruct = global.levelData.level_3 }
+	if room == Habitacion4 { _roomStruct = global.levelData.level_4 }
 	
 	#endregion
 	
@@ -201,6 +206,8 @@ function SaveGame(fileNum = 0) {
 	
 	var _saveArray = array_create(0);
 	
+	rmW = camera_get_view_width(view_camera[0])
+	rmH = camera_get_view_height(view_camera[0])
 	SaveRoom();
 	
 	global.statData.save_x = oPlayer.x;
