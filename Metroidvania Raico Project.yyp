@@ -139,7 +139,7 @@
   },
   "name":"Metroidvania Raico Project",
   "resources":[
-    {"id":{"name":"fnRetro","path":"fonts/fnRetro/fnRetro.yy",},},
+    {"id":{"name":"fnRetro1","path":"fonts/fnRetro1/fnRetro1.yy",},},
     {"id":{"name":"fnToriko","path":"fonts/fnToriko/fnToriko.yy",},},
     {"id":{"name":"scribble_fallback_font","path":"fonts/scribble_fallback_font/scribble_fallback_font.yy",},},
     {"id":{"name":"input_controller_object","path":"objects/input_controller_object/input_controller_object.yy",},},

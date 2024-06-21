@@ -1,6 +1,6 @@
 {
   "$GMFont":"",
-  "%Name":"fnRetro",
+  "%Name":"fnRetro1",
   "AntiAlias":1,
   "applyKerning":0,
   "ascender":21,
@@ -117,7 +117,7 @@
   "last":0,
   "lineHeight":27,
   "maintainGms1Font":false,
-  "name":"fnRetro",
+  "name":"fnRetro1",
   "parent":{
     "name":"Fonts",
     "path":"folders/Fonts.yy",

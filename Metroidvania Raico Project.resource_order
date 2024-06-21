@@ -110,7 +110,7 @@
     {"name":"Timelines","order":13,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings":[
-    {"name":"fnRetro","order":1,"path":"fonts/fnRetro/fnRetro.yy",},
+    {"name":"fnRetro1","order":1,"path":"fonts/fnRetro1/fnRetro1.yy",},
     {"name":"scribble_fallback_font","order":12,"path":"fonts/scribble_fallback_font/scribble_fallback_font.yy",},
     {"name":"input_controller_object","order":30,"path":"objects/input_controller_object/input_controller_object.yy",},
     {"name":"oChest","order":3,"path":"objects/oChest/oChest.yy",},

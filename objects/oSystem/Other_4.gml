@@ -1,5 +1,7 @@
 bgMusic()
 
+scribble_font_bake_outline_8dir("fnRetro1", "fnRetro", c_black, false)
+
 if playerStartPosition != noone {
 	oPlayer.x = playerStartPosition[0];
 	oPlayer.y = playerStartPosition[1];
