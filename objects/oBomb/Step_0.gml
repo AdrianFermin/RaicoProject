@@ -21,13 +21,24 @@ if timer == 0 {
 			}
 			
 			with entitiesList[| i] {
-				if !invincible {
+				
+				if object_index == oWallBreak {
+					
 					damagedBy = global.items[ITEM_BASIC_BOMB];
 					event_user(0);
-					self.pushSpd = 3;
-					pushXTo = pushDir;
-					self.hurtTime = 12;
+					
+				} else {
+					
+					if !invincible {
+						damagedBy = global.items[ITEM_BASIC_BOMB];
+						event_user(0);
+						self.pushSpd = 3;
+						pushXTo = pushDir;
+						self.hurtTime = 12;
+					}
 				}
+				
+				
 			}
 		}
 	}
