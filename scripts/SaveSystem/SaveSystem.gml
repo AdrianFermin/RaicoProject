@@ -29,8 +29,13 @@ function RemoveSavedInstance(levelName, arrayName, counterName, inst) {
 
 function SaveRoom(roomFrom = noone) {
 	
+	instance_activate_object(oCutsceneTriggerPerm)
 	var _permCutsceneTriggerNum = instance_number(oCutsceneTriggerPerm);
+	
+	instance_activate_object(oCutsceneTrigger)
 	var _CutsceneTriggerNum = instance_number(oCutsceneTrigger);
+	
+	instance_activate_object(oChest)
 	var _chestNum = instance_number(oChest);
 	
 	var _roomStruct = {
@@ -95,7 +100,7 @@ function SaveRoom(roomFrom = noone) {
 	#endregion
 	
 	#region Chest
-	
+		
 		for (var i = 0; i < _chestNum; i++) {
 			
 			var inst = instance_find(oChest, i);
@@ -178,7 +183,6 @@ function LoadRoom() {
 	#region Chest
 		
 		if instance_exists(oChest) { instance_destroy(oChest) }
-		
 		for (var i = 0; i < _roomStruct.chestNum; i++) {
 			
 			var inst = _roomStruct.chestData[i];
