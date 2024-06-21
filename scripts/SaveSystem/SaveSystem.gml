@@ -40,6 +40,9 @@ function SaveRoom(roomFrom = noone) {
 	instance_activate_object(oChest)
 	var _chestNum = instance_number(oChest);
 	
+	instance_activate_object(oEntity)
+	var _entitiesNum = instance_number(oEntity);
+	
 	var _roomStruct = {
 		
 		permCutsceneTriggerNum: _permCutsceneTriggerNum,
@@ -48,6 +51,9 @@ function SaveRoom(roomFrom = noone) {
 		CutsceneTriggerData: array_create(_CutsceneTriggerNum),
 		chestNum: _chestNum,
 		chestData: array_create(_chestNum),
+		entitiesNum: _entitiesNum,
+		entitiesData: array_create(_entitiesNum),
+		
 		cameraSize: array_create(2),
 		
 	}
@@ -122,6 +128,24 @@ function SaveRoom(roomFrom = noone) {
 	
 	#endregion
 	
+	#region Entities
+	
+		for (var i = 0; i < _entitiesNum; i++) {
+			
+			var inst = instance_find(oEntity, i);
+			
+			_roomStruct.entitiesData[i] = {
+				x: inst.x,
+				y: inst.y,
+				object_index: inst.object_index,
+				var_struct: {
+					image_xscale: inst.image_xscale,
+				}
+			}
+		}
+		
+	#endregion
+	
 	#endregion
 	
 	#region Store Room Data
@@ -194,6 +218,18 @@ function LoadRoom() {
 			
 			instance_create_layer(inst.x, inst.y, "Instances", oChest, inst.var_struct)
 			
+		}
+	
+	#endregion
+	
+	#region Entities
+		
+		if instance_exists(oEntity) { instance_destroy(oEntity) }
+		for (var i = 0; i < _roomStruct.entitiesNum; i++) {
+			
+			var inst = _roomStruct.entitiesData[i];
+			
+			instance_create_layer(inst.x, inst.y, "Entities", inst.object_index, inst.var_struct);
 		}
 	
 	#endregion
