@@ -12,6 +12,12 @@ function PlayerCooldowns(){
 	//Bomb cooldown
 	if bombLock != 0 { bombLock = max(bombLock - 1, 0) }
 	
-	//Invincibiliti
+	//Invincibility
 	if invincible != 0 { invincible = max(invincible - 1, 0) }
+	
+	//TP Plant
+	if plantLock != 0 { plantLock = max(plantLock - 1, 0) }
+	
+	//TP Use
+	if tpLock != 0 { tpLock = max(tpLock - 1, 0) }
 }

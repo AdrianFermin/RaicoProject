@@ -330,6 +330,7 @@
     {"id":{"name":"__scribble_get_typewriter_events_map","path":"scripts/__scribble_get_typewriter_events_map/__scribble_get_typewriter_events_map.yy",},},
     {"id":{"name":"__scribble_system","path":"scripts/__scribble_system/__scribble_system.yy",},},
     {"id":{"name":"__scribble_tick","path":"scripts/__scribble_tick/__scribble_tick.yy",},},
+    {"id":{"name":"ActivateNoView","path":"scripts/ActivateNoView/ActivateNoView.yy",},},
     {"id":{"name":"AddItem","path":"scripts/AddItem/AddItem.yy",},},
     {"id":{"name":"bgMusic","path":"scripts/bgMusic/bgMusic.yy",},},
     {"id":{"name":"CheckCollisions","path":"scripts/CheckCollisions/CheckCollisions.yy",},},

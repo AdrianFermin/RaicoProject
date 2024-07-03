@@ -143,6 +143,10 @@ bowLock = 0;
 //Bombs
 bombLock = 0;
 
+//TP Orb
+plantLock = 0;
+tpLock = 0;
+
 //Take Damage
 hurtTime = 0;
 pushXTo = 0;

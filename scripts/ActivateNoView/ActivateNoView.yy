@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"ActivateNoView",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ActivateNoView",
+  "parent":{
+    "name":"Utils",
+    "path":"folders/Scripts/Utils.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

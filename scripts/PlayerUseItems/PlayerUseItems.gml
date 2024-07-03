@@ -33,7 +33,9 @@ function PlayerUseItems(){
 	}
 	
 	//Usar TP Orb
-	if onGround && xspd == 0 && input_check("tpOrb") {
-		UseItem(ITEM_TP_ORB, ["HOLA"]);
+	if input_check_released("tpOrb") && plantLock == 0 {
+		UseItem(ITEM_TP_ORB, ["TP"]);
+	} else if onGround && xspd == 0 && input_check_long_pressed("tpOrb") {
+		UseItem(ITEM_TP_ORB, ["PLANT"]);
 	}
 }

@@ -278,6 +278,7 @@
     {"name":"__scribble_get_typewriter_events_map","order":15,"path":"scripts/__scribble_get_typewriter_events_map/__scribble_get_typewriter_events_map.yy",},
     {"name":"__scribble_system","order":9,"path":"scripts/__scribble_system/__scribble_system.yy",},
     {"name":"__scribble_tick","order":10,"path":"scripts/__scribble_tick/__scribble_tick.yy",},
+    {"name":"ActivateNoView","order":12,"path":"scripts/ActivateNoView/ActivateNoView.yy",},
     {"name":"AddItem","order":3,"path":"scripts/AddItem/AddItem.yy",},
     {"name":"bgMusic","order":3,"path":"scripts/bgMusic/bgMusic.yy",},
     {"name":"CheckCollisions","order":5,"path":"scripts/CheckCollisions/CheckCollisions.yy",},
