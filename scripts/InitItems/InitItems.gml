@@ -20,6 +20,10 @@ function InitItems(){
 	global.items[ITEM_BASIC_BOMB] = CreateItem("Bomba Basica", "La bomba mas basica de todas", 
 	"Basic Bomb", "Just a basic bomb", undefined, PlayerUseBombs, 30, "CONSUMIBLE", 15,
 	ELEMENT_NORMAL);
+	global.items[ITEM_TP_ORB] = CreateItem("Orbe de Teletransporte", "Un orbe que te permite plantarlo y luego teletransportarte a su ubicacion", 
+	"Teleport Orb", "An orb that you can plant and then teleport to its location", sTpOrb, PlayerUseTpOrb, 100, "INFINITE", 0,
+	ELEMENT_NORMAL);
+	
 	
 	//Ataques
 	global.items[ITEM_MONJE_ATTACK_1] = CreateItem("Generico", "Generico", 

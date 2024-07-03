@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"PlatformsRequirements",
   "isCompatibility":false,
   "isDnD":false,

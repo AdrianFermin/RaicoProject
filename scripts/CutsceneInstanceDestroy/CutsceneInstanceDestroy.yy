@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"CutsceneInstanceDestroy",
   "isCompatibility":false,
   "isDnD":false,

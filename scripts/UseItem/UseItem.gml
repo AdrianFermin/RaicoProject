@@ -1,4 +1,4 @@
-function UseItem(itemId){
+function UseItem(itemId, args = 0){
 	
 	var item = GetItem(itemId) //Busca el objeto a usar
 	
@@ -7,7 +7,19 @@ function UseItem(itemId){
 		var itemDef = global.items[itemId]; //Obtiene la definicion del item
 		var action = itemDef[ITEM_DEF_ACTION] //Obtiene la funcionalidad del item
 		
-		if action != undefined { action(); } //Ejecuta la funcionalidad del item
+		//Ejecuta la funcionalidad del item
+		if action != undefined {
+			
+			if args == 0 {
+				action();
+				
+			} else {
+				
+				script_execute_ext(action, args)
+				
+			}
+			
+		} 
 		
 		//Verifica si el item no es de tipo infinito
 		if itemDef[ITEM_DEF_TYPE] == "CONSUMIBLE"{

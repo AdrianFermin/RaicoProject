@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"WallBoots",
   "isCompatibility":false,
   "isDnD":false,

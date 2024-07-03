@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"EnemiesDetectRange",
   "isCompatibility":false,
   "isDnD":false,

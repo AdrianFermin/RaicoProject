@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"PlayerHanging",
   "isCompatibility":false,
   "isDnD":false,

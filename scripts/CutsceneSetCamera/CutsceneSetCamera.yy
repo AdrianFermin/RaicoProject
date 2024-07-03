@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"CutsceneSetCamera",
   "isCompatibility":false,
   "isDnD":false,

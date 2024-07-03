@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"ControlsBuffer",
   "isCompatibility":false,
   "isDnD":false,

@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"MonjeSpriteControl",
   "isCompatibility":false,
   "isDnD":false,

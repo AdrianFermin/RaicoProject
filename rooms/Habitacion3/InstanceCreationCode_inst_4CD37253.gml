@@ -9,8 +9,8 @@ t_scene_info = [
 	[CutsceneSetCameraFocus, oPlayer, 30],
 	[CutsceneWait, .2],
 	[CutsceneShowText, "[scale, 1.25][c_red]RAY:[c_white][shake]"+
-	" NO TODOS ESTAMOS DESESPERADOOS[/shake][speed, 0.05]. . . [speed, 0.3](Esta chica me estresa...)[/speed]", 
-	"[scale, 1.25][c_red]RAY:[c_white][shake] NOT ALL OF US ARE DESPERATE[/shake][speed, 0.05]. . . [speed, 0.3](This girl stress me out...)[/speed]"],
+	" NO TODOS ESTAMOS DESESPERADOOS[/shake][speed, 0.075]. . . [speed, 0.3](Esta chica me estresa...)[/speed]", 
+	"[scale, 1.25][c_red]RAY:[c_white][shake] NOT ALL OF US ARE DESPERATE[/shake][speed, 0.075]. . . [speed, 0.3](This girl stress me out...)[/speed]"],
 	[CutsceneAddItem, ITEM_BASIC_DASH, 100],
 	[CutsceneWait, .1],
 	[CutsceneInstanceDestroyAll],

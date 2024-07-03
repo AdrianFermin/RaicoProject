@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"CutsceneMusicPlay",
   "isCompatibility":false,
   "isDnD":false,

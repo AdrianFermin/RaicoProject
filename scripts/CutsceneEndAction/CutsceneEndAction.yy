@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"CutsceneEndAction",
   "isCompatibility":false,
   "isDnD":false,

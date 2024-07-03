@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"PlayerUseTpOrb",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"PlayerUseTpOrb",
+  "parent":{
+    "name":"Items",
+    "path":"folders/Scripts/Player/Items.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

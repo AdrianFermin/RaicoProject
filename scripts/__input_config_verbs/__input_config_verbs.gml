@@ -25,6 +25,7 @@ function __input_config_verbs()
 			attack:	input_binding_key(ord("X")),
 			bow:	input_binding_key(ord("S")),
 			bomb:	input_binding_key(ord("A")),
+			tpOrb:	input_binding_key(ord("B")),
 			
 			interact: input_binding_key(vk_enter),
 			accept:	input_binding_key(vk_space),
@@ -43,6 +44,7 @@ function __input_config_verbs()
 			attack:	input_binding_gamepad_button(gp_face3),
 			bow:	input_binding_gamepad_button(gp_shoulderrb),
 			bomb:	input_binding_gamepad_button(gp_shoulderlb),
+			tpOrb:	input_binding_gamepad_button(gp_padu),
 			
 			interact: input_binding_gamepad_button(gp_face4),
 			accept:	input_binding_gamepad_button(gp_face1),

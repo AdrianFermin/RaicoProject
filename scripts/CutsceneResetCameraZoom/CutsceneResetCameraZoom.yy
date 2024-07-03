@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"CutsceneResetCameraZoom",
   "isCompatibility":false,
   "isDnD":false,

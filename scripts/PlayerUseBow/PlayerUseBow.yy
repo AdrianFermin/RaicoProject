@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"PlayerUseBow",
   "isCompatibility":false,
   "isDnD":false,

@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"CreateBoxAtMouse",
   "isCompatibility":false,
   "isDnD":false,

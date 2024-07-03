@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"ControlControllerButtons",
   "isCompatibility":false,
   "isDnD":false,

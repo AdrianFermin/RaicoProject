@@ -51,7 +51,7 @@ function Macros(){
 	#macro INVENTORY_QUANTITY 1
 	#macro INVENTORY_STATE 2
 	
-	//Items
+	//Items - Last = 8
 	#macro ITEM_BASIC_ATTACK 0
 	#macro ITEM_BASIC_JUMP 1
 	#macro ITEM_BASIC_DASH 2
@@ -59,8 +59,9 @@ function Macros(){
 	#macro ITEM_BASIC_BOW 4
 	#macro ITEM_WALL_BOOTS 5
 	#macro ITEM_BASIC_BOMB 6
+	#macro ITEM_TP_ORB 8
 	
-	//Ataques
+	//Ataques - Last = 8
 	#macro ITEM_MONJE_ATTACK_1 7
 	
 	//Elements

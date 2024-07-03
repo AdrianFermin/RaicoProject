@@ -32,4 +32,8 @@ function PlayerUseItems(){
 		UseItem(equipment[BOMBS])
 	}
 	
+	//Usar TP Orb
+	if onGround && xspd == 0 && input_check("tpOrb") {
+		UseItem(ITEM_TP_ORB, ["HOLA"]);
+	}
 }
