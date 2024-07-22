@@ -10,7 +10,7 @@
   "managed":true,
   "name":"oSign",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oInteractable","path":"objects/oInteractable/oInteractable.yy",},"propertyId":{"name":"tipo","path":"objects/oInteractable/oInteractable.yy",},"resource":null,"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"INTERACTABLE_HOVER",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oInteractable","path":"objects/oInteractable/oInteractable.yy",},"propertyId":{"name":"tipo","path":"objects/oInteractable/oInteractable.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"INTERACTABLE_HOVER",},
   ],
   "parent":{
     "name":"Interactables",
@@ -34,9 +34,9 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"baseText","filters":[],"listItems":[],"multiselect":false,"name":"baseText","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":null,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"Hola mundo","varType":2,},
-    {"$GMObjectProperty":"v1","%Name":"baseTextENG","filters":[],"listItems":[],"multiselect":false,"name":"baseTextENG","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":null,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"Hello World","varType":2,},
-    {"$GMObjectProperty":"v1","%Name":"sprites","filters":[],"listItems":[],"multiselect":false,"name":"sprites","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":null,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"[]","varType":4,},
+    {"$GMObjectProperty":"v1","%Name":"baseText","filters":[],"listItems":[],"multiselect":false,"name":"baseText","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"Hola mundo","varType":2,},
+    {"$GMObjectProperty":"v1","%Name":"baseTextENG","filters":[],"listItems":[],"multiselect":false,"name":"baseTextENG","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"Hello World","varType":2,},
+    {"$GMObjectProperty":"v1","%Name":"sprites","filters":[],"listItems":[],"multiselect":false,"name":"sprites","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"[]","varType":4,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

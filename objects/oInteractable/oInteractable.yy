@@ -30,8 +30,8 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"tipo","filters":[],"listItems":[],"multiselect":false,"name":"tipo","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":null,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"INTERACTABLE_PRESSED","varType":0,},
-    {"$GMObjectProperty":"v1","%Name":"area","filters":[],"listItems":[],"multiselect":false,"name":"area","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":null,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"64","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"tipo","filters":[],"listItems":[],"multiselect":false,"name":"tipo","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"INTERACTABLE_PRESSED","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"area","filters":[],"listItems":[],"multiselect":false,"name":"area","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"64","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
