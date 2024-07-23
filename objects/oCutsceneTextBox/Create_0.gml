@@ -21,7 +21,8 @@ if player == noone {
 
 text = GetCSVText(textCode[iterator]);
 sprites = GetCSVSprites(textCode[iterator])
-text = TextReplacer(text, sprites, "SPRITES")
+
+if sprites[0] != "NULL" { text = TextReplacer(text, sprites, "SPRITES") }
 
 scb = scribble(text);
 scb.starting_format("fnRetro", c_white)

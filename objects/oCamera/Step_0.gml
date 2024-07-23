@@ -3,10 +3,6 @@ if !instance_exists(oPlayer) exit;
 
 if oSystem.onCinematic exit;
 
-if keyboard_check_pressed(vk_escape) {
-	window_set_fullscreen(!window_get_fullscreen())
-}
-
 //Obtener tamaño de la camara
 var _camWidth = camera_get_view_width(view_camera[0]);
 var _camHeight = camera_get_view_height(view_camera[0]);

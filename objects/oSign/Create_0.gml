@@ -32,11 +32,11 @@ if player == noone {
 	finalY = oCamera.y + 200;
 }
 
-text = TextReplacer(text, sprites, "SPRITES");
+if sprites[0] != "NULL" { text = TextReplacer(text, sprites, "SPRITES"); }
 
 scb = scribble(text);
 scb.starting_format("fnRetro", c_white)
-scb.scale(1.5)
+scb.scale(1.25)
 scb.animation_speed(0.5)
 scb.wrap(470 * 2, 60 * 2)
 
