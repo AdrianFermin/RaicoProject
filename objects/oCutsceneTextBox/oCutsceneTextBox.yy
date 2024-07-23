@@ -29,9 +29,9 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"text","filters":[],"listItems":[],"multiselect":false,"name":"text","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":null,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"Hola Mundo","varType":2,},
-    {"$GMObjectProperty":"v1","%Name":"textENG","filters":[],"listItems":[],"multiselect":false,"name":"textENG","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":null,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"Hello World","varType":2,},
-    {"$GMObjectProperty":"v1","%Name":"createdBy","filters":[],"listItems":[],"multiselect":false,"name":"createdBy","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":null,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"textCode","filters":[],"listItems":[],"multiselect":false,"name":"textCode","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"[\"A001\"]","varType":4,},
+    {"$GMObjectProperty":"v1","%Name":"createdBy","filters":[],"listItems":[],"multiselect":false,"name":"createdBy","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"baseText","filters":[],"listItems":[],"multiselect":false,"name":"baseText","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"noone","varType":4,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

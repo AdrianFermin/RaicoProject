@@ -1,1 +1,1 @@
-TextToView(text, textENG)
+TextToView(textCode)

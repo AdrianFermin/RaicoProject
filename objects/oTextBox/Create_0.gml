@@ -17,10 +17,16 @@ if player == noone {
 	finalY = oCamera.y + 200;
 }
 
-text = "[scale, 1.5]" + text;
-textENG = "[scale, 1.5]" + textENG;
+text = "";
 
-scb = oSystem.idioma == IDIOMA_ESP ? scribble(text) : scribble(textENG);
+if baseText == noone {
+	text = GetCSVText(textCode);
+} else {
+	text = baseText;
+}
+
+
+scb = scribble(text);
 scb.starting_format("fnRetro", c_white)
 scb.wrap(470 * 2, 60 * 2)
 	

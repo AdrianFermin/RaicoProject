@@ -2,10 +2,15 @@
 // Inherit the parent event
 event_inherited();
 
-text = baseText;
-textENG = baseTextENG;
+text = "";
 
-sys = instance_nearest(x, y, oSystem);
+if baseText == noone {
+	text = GetCSVText(textCode);
+} else {
+	text = baseText;
+}
+
+sprites = GetCSVSprites(textCode);
 
 mando = oSystem.mando;
 idioma = oSystem.idioma;
@@ -27,26 +32,12 @@ if player == noone {
 	finalY = oCamera.y + 200;
 }
 
-for (var i = 0; i < array_length(sprites); i++) {
-	
-	var pos = string_pos("?", text);
-	var posENG = string_pos("?", textENG);
-	
-	text = string_delete(text, pos, 1)
-	textENG = string_delete(textENG, posENG, 1)
-	
-	var join = "[" + sprite_get_name(variable_instance_get(sys, sprites[i])) + "]";
-	
-	text = string_insert(join, text, pos)
-	textENG = string_insert(join, textENG, posENG)
-	
-}
+text = TextReplacer(text, sprites, "SPRITES");
 
-scb = oSystem.idioma == IDIOMA_ESP ? scribble(text) : scribble(textENG);
+scb = scribble(text);
 scb.starting_format("fnRetro", c_white)
 scb.scale(1.5)
 scb.animation_speed(0.5)
 scb.wrap(470 * 2, 60 * 2)
 
-sub = 0;
 counter = 0;

@@ -8,10 +8,12 @@ if !opened {
 		
 		AddItem(content, quantity)
 		
-		var text = string_concat("Has obtenido [c_black]", item[ITEM_DEF_NAME], "[c_green] x", quantity);
-		var textENG = string_concat("You got [c_black]", item[ITEM_DEF_ENG_NAME], "[c_green] x", quantity);
+		var text = GetCSVText("A003")
+		var itemName = oSystem.idioma == IDIOMA_ENG ? item[ITEM_DEF_ENG_NAME] : item[ITEM_DEF_NAME];
 		
-		TextToView(text, textENG);
+		text = TextReplacer(text, [itemName, quantity], "NORMAL")
+		
+		TextToView("A000", text);
 		opened = true;
 		
 	} else {
@@ -20,16 +22,16 @@ if !opened {
 		
 		alarm[0] = 1;
 		
-		var text = string_concat("Has obtenido [c_ruby]Rubies", "[c_green] x", quantity);
-		var textENG = string_concat("You got [c_ruby]Rubies", "[c_green] x", quantity);
+		var text = GetCSVText("A004");
+		text = TextReplacer(text, [quantity], "NORMAL")
 		
-		TextToView(text, textENG);
+		TextToView("A000", text);
 		opened = true;
 	}
 	
 } else {
 	
-	TextToView("Este cofre esta vacio", "This chest is empty");
+	TextToView("A005");
 	
 }
 

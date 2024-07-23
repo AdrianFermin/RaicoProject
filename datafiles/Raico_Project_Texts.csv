@@ -1,0 +1,24 @@
+CODE,CONTEXTO,SPRITES,SPANISH,ENGLISH
+A001,Texto de prueba,NULL,Hola Mundo,Hello World
+A002,Texto de prueba con sprites,moveLeftBtn;moveRightBtn,Prueba sprites ? y ?,Sprites test ? and ?
+A003,Texto de obtencion de objetos,NULL,Has obtenido [c_gray]? [c_green] x?,You got [c_gray]? [c_green] x?
+A004,Texto de obtencion de rubies,NULL,Has obtenido [c_ruby]Rubies [c_green] x?,You got [c_ruby]Rubies [c_green] x?
+A005,Texto de cofre vacio,NULL,Este cofre esta vacio,This chest is empty
+A006,Letrero de movimiento en Habitacion 1,moveLeftBtn;moveRightBtn,Puedes moverte con ? y ?,You can move with ? & ?
+A007,Letrero de escaleras en Habitacion 1,moveUpBtn;moveDownBtn,Usa las escaleras con ? y ?,Use ladders with ? y ?
+A008,Letrero de salto en Habitacion 1,jumpBtn,Usa ? para [c_gray]Saltar[c_white],Use ? to [c_gray]Jump[c_white]
+A009,,NULL,Prueba de comas; por si acaso; veremos,Prueba de comas; por si acaso; veremos; pero in inglish
+A010,,,,
+A011,,,,
+A012,,,,
+A013,,,,
+A014,,,,
+A015,,,,
+A016,,,,
+A017,,,,
+A018,,,,
+A019,,,,
+A020,,,,
+A021,,,,
+A022,,,,
+A023,,,,

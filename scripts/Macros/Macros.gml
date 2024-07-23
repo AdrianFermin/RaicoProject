@@ -1,8 +1,8 @@
 function Macros(){
 	
 	//Idiomas
-	#macro IDIOMA_ESP 0
-	#macro IDIOMA_ENG 1
+	#macro IDIOMA_ESP 3
+	#macro IDIOMA_ENG 4
 	
 	//Interactuables
 	#macro INTERACTABLE_PRESSED 0

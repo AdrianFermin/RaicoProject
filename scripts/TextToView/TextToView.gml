@@ -1,16 +1,16 @@
-function TextToView(texto, engText, creator = self){
+function TextToView(code, texto = noone, creator = self){
 
 	if !oSystem.onCinematic {
 		instance_create_layer(oCamera.x, oCamera.y, "Instances", oTextBox, {
-			text: texto,
+			textCode: code,
 			createdBy: creator,
-			textENG: engText
+			baseText: texto
 		})
 	} else {
 		instance_create_layer(oCamera.x, oCamera.y, "Instances", oCutsceneTextBox, {
-			text: texto,
+			textCode: code,
 			createdBy: creator,
-			textENG: engText
+			baseText: texto,
 		})
 	}
 }

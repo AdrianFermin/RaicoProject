@@ -1,5 +1,8 @@
 InitItems();
 
+//Load texts
+global.text_csv = load_csv("Raico_Project_Texts.csv")
+
 global.coins = 0;
 
 //Crear lista de inventario
@@ -31,7 +34,7 @@ strongToEarth = [ELEMENT_WATER];
 strongToThunder = [ELEMENT_EARTH];
 
 //Lenguaje
-idioma = IDIOMA_ENG;
+idioma = IDIOMA_ESP;
 
 //Listado de acciones y botones
 mando = noone;

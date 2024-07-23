@@ -34,9 +34,8 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"baseText","filters":[],"listItems":[],"multiselect":false,"name":"baseText","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"Hola mundo","varType":2,},
-    {"$GMObjectProperty":"v1","%Name":"baseTextENG","filters":[],"listItems":[],"multiselect":false,"name":"baseTextENG","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"Hello World","varType":2,},
-    {"$GMObjectProperty":"v1","%Name":"sprites","filters":[],"listItems":[],"multiselect":false,"name":"sprites","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"[]","varType":4,},
+    {"$GMObjectProperty":"v1","%Name":"textCode","filters":[],"listItems":[],"multiselect":false,"name":"textCode","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"A002","varType":2,},
+    {"$GMObjectProperty":"v1","%Name":"baseText","filters":[],"listItems":[],"multiselect":false,"name":"baseText","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"noone","varType":4,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

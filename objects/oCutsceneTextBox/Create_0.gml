@@ -1,5 +1,7 @@
 active = true;
 
+iterator = 0;
+
 image_xscale = 0;
 image_yscale = 0;
 
@@ -17,7 +19,11 @@ if player == noone {
 	finalY = oCamera.y + 200;
 }
 
-scb = oSystem.idioma == IDIOMA_ESP ? scribble(text) : scribble(textENG);
+text = GetCSVText(textCode[iterator]);
+sprites = GetCSVSprites(textCode[iterator])
+text = TextReplacer(text, sprites, "SPRITES")
+
+scb = scribble(text);
 scb.starting_format("fnRetro", c_white)
 scb.wrap(470 * 2, 60 * 2)
 	
