@@ -1,5 +1,7 @@
 active = true;
 
+iterator = 0;
+
 image_xscale = 0;
 image_yscale = 0;
 
@@ -18,9 +20,20 @@ if player == noone {
 }
 
 text = "";
+sprites = noone;
 
 if baseText == noone {
-	text = GetCSVText(textCode);
+	
+	if is_array(textCode) {
+		text = GetCSVText(textCode[iterator]);
+		sprites = GetCSVSprites(textCode[iterator])
+	} else {
+		text = GetCSVText(textCode);
+		sprites = GetCSVSprites(textCode)
+	}
+	
+	if sprites[0] != "NULL" { text = TextReplacer(text, sprites, "SPRITES") }
+	
 } else {
 	text = baseText;
 }

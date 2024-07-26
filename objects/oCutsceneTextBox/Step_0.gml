@@ -28,8 +28,14 @@ if aceptar {
 			exit;
 		}
 		
-		text = GetCSVText(textCode[iterator]);
-		sprites = GetCSVSprites(textCode[iterator])
+		if is_array(textCode) {
+			text = GetCSVText(textCode[iterator]);
+			sprites = GetCSVSprites(textCode[iterator])
+		} else {
+			text = GetCSVText(textCode);
+			sprites = GetCSVSprites(textCode)
+		}
+		
 		
 		if sprites[0] != "NULL" { text = TextReplacer(text, sprites, "SPRITES") }
 		

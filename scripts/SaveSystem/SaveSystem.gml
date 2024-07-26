@@ -40,6 +40,9 @@ function SaveRoom(roomFrom = noone) {
 	instance_activate_object(oChest)
 	var _chestNum = instance_number(oChest);
 	
+	instance_activate_object(oNPC)
+	var _npcNum = instance_number(oNPC)
+	
 	instance_activate_object(oEntity)
 	var _entitiesNum = instance_number(oEntity);
 	
@@ -47,10 +50,16 @@ function SaveRoom(roomFrom = noone) {
 		
 		permCutsceneTriggerNum: _permCutsceneTriggerNum,
 		permCutsceneTriggerData: array_create(_permCutsceneTriggerNum),
+		
 		CutsceneTriggerNum: _CutsceneTriggerNum,
 		CutsceneTriggerData: array_create(_CutsceneTriggerNum),
+		
 		chestNum: _chestNum,
 		chestData: array_create(_chestNum),
+		
+		npcNum: _npcNum,
+		npcData: array_create(_npcNum),
+		
 		entitiesNum: _entitiesNum,
 		entitiesData: array_create(_entitiesNum),
 		
@@ -122,6 +131,31 @@ function SaveRoom(roomFrom = noone) {
 					content: inst.content,
 					quantity: inst.quantity,
 					area: inst.area
+				}
+			}
+		}
+	
+	#endregion
+	
+	#region NPCs
+		
+		for (var i = 0; i < _npcNum; i++) {
+			
+			var inst = instance_find(oNPC, i);
+			
+			_roomStruct.npcData[i] = {
+				x: inst.x,
+				y: inst.y,
+				var_struct: {
+					area: inst.area,
+					spr: inst.spr,
+					baseText: inst.baseText,
+					extraText: inst.extraText,
+					spd: inst.spd,
+					actionType: inst.actionType,
+					used: inst.used,
+					look: inst.look,
+					customFn: inst.customFn
 				}
 			}
 		}
@@ -217,6 +251,19 @@ function LoadRoom() {
 			var inst = _roomStruct.chestData[i];
 			
 			instance_create_layer(inst.x, inst.y, "Instances", oChest, inst.var_struct)
+			
+		}
+	
+	#endregion
+	
+	#region NPCs
+		
+		if instance_exists(oNPC) { instance_destroy(oNPC) }
+		for (var i = 0; i < _roomStruct.npcNum; i++) {
+			
+			var inst = _roomStruct.npcData[i];
+			
+			instance_create_layer(inst.x, inst.y, "Instances", oNPC, inst.var_struct)
 			
 		}
 	
