@@ -41,7 +41,7 @@ function SaveRoom(roomFrom = noone) {
 	var _chestNum = instance_number(oChest);
 	
 	instance_activate_object(oNPC)
-	var _npcNum = instance_number(oNPC)
+	var _npcNum = instance_number(oNPC);
 	
 	instance_activate_object(oEntity)
 	var _entitiesNum = instance_number(oEntity);
@@ -155,7 +155,8 @@ function SaveRoom(roomFrom = noone) {
 					actionType: inst.actionType,
 					used: inst.used,
 					look: inst.look,
-					customFn: inst.customFn
+					customFn: inst.customFn,
+					image_xscale: inst.image_xscale
 				}
 			}
 		}

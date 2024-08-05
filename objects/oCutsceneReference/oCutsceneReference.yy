@@ -32,5 +32,5 @@
     "path":"sprites/sCutsceneReference/sCutsceneReference.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }
