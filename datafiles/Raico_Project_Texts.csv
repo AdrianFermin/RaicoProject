@@ -1,4 +1,4 @@
-CODE,CONTEXTO,SPRITES,SPANISH,ENGLISH
+CODE,CONTEXTO,SPRITES,ESPAÑOL,ENGLISH
 A001,Texto de prueba,NULL,Hola Mundo,Hello World
 A002,Texto de prueba con sprites,moveLeftBtn;moveRightBtn,Prueba sprites ? y ?,Sprites test ? and ?
 A003,Texto de obtencion de objetos,NULL,Has obtenido [c_gray]? [c_green]x?,You got [c_gray]? [c_green] x?
@@ -15,8 +15,8 @@ A013,Dialogo 02 de la Cinematica 02 en Habitacion 2,NULL,[c_red] RAY:[c_white] S
 A014,Dialogo 03 de la Cinematica 02 en Habitacion 2,NULL,[c_blue]PETRONILA:[c_white] Rapido; sigueme,"[c_blue]PETRONILA:[c_white] Move it, follow me"
 A015,Letrero de Dash en Habitacion 3,dashBtn,Puedes usar el [c_gray]Dash[c_white] con ? . Si saltas mientras lo usas llegaras mas lejos.,You can [c_gray]Dash[c_white] with ? . If you jump while using it you'll get a longer jump
 A016,Letrero de Air Dash en Habitacion 3,NULL,Puedes usar el [c_gray]Dash[c_white] hasta 2 veces en el aire.,You can [c_gray]Dash[c_white] 2 times in the air
-A017,Dialogo 01 de la Cinematica 03 en Habitacion 3,NULL,[c_blue]PETRONILA:[c_white] Que lento estas hoy; se te olvido como usar el [c_gray]Dash[c_white] o que?,[c_blue]PETRONILA:[c_white] You're too slow today; did you forget how to use the [c_gray]Dash[c_white]?
-A018,Dialogo 02 de la Cinematica 03 en Habitacion 3,NULL,[c_red]RAY:[c_white][shake] NO TODOS ESTAMOS DESESPERADOOS[/shake][speed; 0.075]. . . [speed; 0.3](Esta chica me estresa...)[/speed],[c_red]RAY:[c_white][shake] NOT ALL OF US ARE DESPERATE[/shake][speed; 0.075]. . . [speed; 0.3](This girl stress me out...)[/speed]
+A017,Texto de indicacion para interactuar,interactBtn,? Interactuar,? Interact
+A018,,,,
 A019,Letrero de Wall Jump en Habitacion 4,jumpBtn,Puedes [c_gray]Saltar en la pared[c_white] pulsando ? cuando estes en el aire y tengas una pared en frente,You can [c_gray]Wall Jump[c_white] pressing ? while facing a wall in the air
 A020,,,,
 A021,,,,
